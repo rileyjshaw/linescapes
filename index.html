@@ -1,0 +1,40 @@
+<html>
+<head>
+  <title>Linescapes</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href='http://fonts.googleapis.com/css?family=Montserrat:700' rel='stylesheet' type='text/css'>
+</head>
+<body>
+  <!-- Attribution:
+  * Fullscreen icon designed by Phil Goodwin from the Noun Project
+  * Mute icon designed by Tom Walsh from the Noun Project
+  * "Evening Fall (Harp)" by Kevin MacLeod from incompetech.com
+
+  * Licensed under Creative Commons: By Attribution 3.0
+  http://creativecommons.org/licenses/by/3.0/
+  -->
+  <div id="overlay">
+    <div class="middle">
+      <h1 id="title">Linescapes</h1>
+      <ul class="scenes">
+        <li id="lake">1</li>
+        <li id="hills">2</li>
+        <li id="forest">3</li>
+      </ul>
+    </div>
+    <ul class="controls">
+      <li id="mute">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" width="57.3px" height="50px" viewBox="20 25 57.3 50" enable-background="new 20 25 57.3 50" xml:space="preserve"><polygon points="77.3,44.6 73.2,40.5 67.3,46.5 61.3,40.5 57.3,44.6 63.2,50.5 57.3,56.4 61.4,60.5 67.3,54.6 73.2,60.5 77.3,56.4 71.3,50.5" class="x"/><polygon points="20,39.2 20,60.8 29.5,60.8 49.5,75 49.5,25 29.5,39.2"/></svg>
+      </li>
+      <li id="fullscreen">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" width="100px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve" height="100px"><g><polygon points="82.8,71.4 61.4,50 82.8,28.6 82.8,39.8 99,39.8 99,1 60.2,1 60.2,17.2 71.4,17.2 50,38.6 28.6,17.2 39.8,17.2 39.8,1 1,1 1,39.8 17.2,39.8 17.2,28.6 38.6,50 17.2,71.4 17.2,60.2 1,60.2 1,97.5 1,99 2.5,99 39.8,99 39.8,82.8 28.6,82.8 50,61.4 71.4,82.8 60.2,82.8 60.2,99 99,99 99,60.2 82.8,60.2"/></g></svg>
+      </li>
+    </ul>
+  </div>
+  <audio id="audio" autoplay loop>
+    <source src="eveningFall.mp3" type="audio/mpeg" />
+  </audio>
+  <canvas id="canvas"></canvas>
+  <script src="script.js" type="text/javascript"></script>
+</body>
+</html>

@@ -1,0 +1,111 @@
+html {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+body {
+  margin: 0;
+}
+.light {
+  color: white;
+  fill: white;
+}
+.stark li {
+  opacity: 1;
+  color: black;
+  fill: black;
+}
+#overlay {
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.faded h1 {
+  opacity: 0;
+  transition: opacity 2s 2s;
+}
+.faded ul {
+  opacity: 0;
+  transition: opacity 2s;
+}
+.muted .x {
+  display: none;
+}
+.middle {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+}
+h1 {
+  margin: -0.5em 0 0;
+  font: bold 60px/1em Montserrat, sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  transition: opacity 1s;
+}
+.scenes li {
+  width: 24px;
+  text-align: center;
+}
+.controls {
+  bottom: 30px;
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+svg {
+  height: 60px;
+  width: 100px;
+}
+.controls svg {
+  height: 30px;
+}
+ul {
+  padding: 0;
+  list-style: none;
+  font-size: 0;
+  text-align: center;
+  transition: opacity 1s;
+}
+li {
+  display: inline-block;
+  margin: 30px 45px;
+  vertical-align: middle;
+  font: 24px/60px Montserrat, sans-serif;
+  color: #fff;
+  opacity: 0.5;
+  cursor: pointer;
+  transition: opacity 0.4s;
+}
+li:hover {
+  opacity: 1;
+}
+canvas {
+  position: fixed;
+  top: -10%;
+  left: -10%;
+  height: 120%;
+  width: 120%;
+}
+.lake {
+  left: 0;
+  background: #c0f3d4;
+  -webkit-animation: scroll 40s linear infinite alternate;
+}
+.forest {
+  top: -20%;
+  background: #000;
+}
+.hills {
+  top: 0;
+  background: rgb(128, 128, 255);
+}
+@-webkit-keyframes scroll {
+  from {left: 0;}
+  to {left: -20%;}
+}
