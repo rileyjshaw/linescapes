@@ -340,7 +340,7 @@ function forest () {
 
   initScene('forest', 'light', forest);
 
-  ctx.setFillColor('rgba(0, 0, 0, 0.036)');
+  ctx.fillStyle = 'rgba(0, 0, 0, 0.036)';
   for (var h = 10; h >= 0; h--) {
     vertLines(h/10 - offset, h/10 + offset, offset, 8, 'top', [205, 133, 63], [205, 133, 63]);
     // overlay 6 layers of fog to ensure alpha blending is consistent
@@ -368,7 +368,7 @@ function hills () {
 
   initScene('hills', 'light', hills);
 
-  ctx.setFillColor('rgba(255, 255, 255, 0.02)');
+  ctx.fillStyle = 'rgba(255, 255, 255, 0.02)';
   for (var h = -1; h <= 10; h++) {
     vertLines(h/10 - offset, h/10 + offset, offset * 4/3, 5, 'center', [0, 0, 255], [0, 0, 255]);
     // overlay 6 layers of fog to ensure alpha blending is consistent
